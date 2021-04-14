@@ -1,0 +1,467 @@
+/*
+* CSS PADRﾃグ VEST PAGE - FID.
+* Criado em : 10/05/2019, 17:46:12
+* Autor     : Junior Silva
+*/
+
+/* *************************
+******* FONT FAMILYS *******
+************************** */
+
+/*
+* FONT PROXIMA
+*/
+@font-face {font-family: mont-ultra; src: url(../fonts/montserrat-black.ttf);}
+@font-face {font-family: mont-extrabold; src: url(../fonts/montserrat-extrabold.ttf);}
+@font-face {font-family: mont-bold; src: url(../fonts/montserrat-bold.ttf);}
+@font-face {font-family: mont-medium; src: url(../fonts/montserrat-medium.ttf);}
+@font-face {font-family: mont-regular; src: url(../fonts/montserra-regular.ttf);}
+@font-face {font-family: mont-light; src: url(../fonts/montserrat-light.ttf);}
+@font-face {font-family: mont-elight; src: url(../fonts/montserrat-extralight.ttf);}
+@font-face {font-family: mont-thin; src: url(../fonts/montserrat-thin.ttf);}
+
+body, html {font-family: mont-light; overflow-x:hidden;}
+
+/* *************************
+******* FONT FAMILYS *******
+************************** */
+
+/* *************************
+******* FONT WEIGHTS *******
+************************** */
+
+.f-thim {font-family: mont-thin;}
+.f-elight {font-family: mont-elight;}
+.f-light {font-family: mont-light;}
+.f-regular {font-family: mont-regular;}
+.f-medio {font-family: mont-medium;}
+.f-semibold {font-family: mont-bold;}
+.f-bold {font-family: mont-extrabold;}
+.f-ebold {font-family: mont-ultra;}
+.f-ubold {font-family: mont-ultra;}
+
+/* *************************
+******* FONT COLORS *******
+************************** */
+.f-black {color: #454545;}
+.f-gray {color: #555;}
+.f-silver {color: #888;}
+.f-white {color: #fff;}
+.f-red {color: #ed2131;}
+.f-red1 {color: #c84e4e;}
+.f-blue {color: #033266;}
+.f-blue2 {color: #40c4ff;}
+.f-green {color: #31482d;}
+.f-yellow {color: #ffb22c;}
+.f-orange {color: #FF8000;}
+
+/* *************************
+******* BOX COLORS *********
+************************** */
+.box-black {background-color: #242424;}
+.box-gray {background-color: #565656;}
+.box-silver {background-color: #f4f4f4;}
+.box-blue {background-color: #033266;}
+.box-green1 {background-color: #1f401c;}
+.box-yellow1 {background-color: #ffb22c;}
+
+/* *************************
+******* FONT SIZES *********
+************************** */
+.title-ultra {font-size: 88px}
+.title-larg {font-size: 68px}
+.title-larg2 {font-size: 58px}
+.title-page {font-size: 45px}
+.title-page-sec {font-size: 30px}
+.subtitle-page {font-size: 25px}
+.text-page {font-size: 18px; line-height: 29px}
+.text-page2 {font-size: 15px; line-height: 21px}
+
+.header-default {margin-bottom: 50px;}
+.header-default h1 {font-size: 25px; margin-bottom: 5px;}
+.header-default h1 strong {display: block; font-size: 50px; margin-top: -3px;}
+.header-default p {font-size: 18px;}
+
+.icon-logo {position: absolute; width: 250px; height: 136px; left: 50%; margin-left: -125px; top: 30px; background: url(../images/icon-logo.png) no-repeat center center; background-size: 100%;}
+
+.margin-header {margin-top: 150px}
+
+/* *************************
+******* BOX COLORS *********
+************************** */
+.box-black {background-color: #242424;}
+.box-black2 {background-color: #151515;}
+.box-gray {background-color: #565656;}
+.box-silver {background-color: #f4f4f4;}
+.box-silver-d {background-color: #e7e7e7;}
+.box-white {background-color: #fff;}
+.box-red1 {background-color: #ed3237;}
+.box-red2 {background-color: #cd2d31;}
+.box-blue {background-color: #033266;}
+.box-blue2 {background-color: #006685;}
+.box-green1 {background-color: #1f401c;}
+.box-green2 {background-color: #181e17;}
+.box-yellow1 {background-color: #ffb22c;}
+.box-yellow2 {background-color: #d5972b;}
+
+/* BORDAS ARREDONDADAS EM ELEMENTOS */
+.radius-p {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+.padding-total-small {padding:10px}
+
+/*
+ LINE -> ADICIONA LINHA PARA SEPARAR ELEMENTOS 
+ CLEAR -> LIMPA FLUTUAÇÃO PARA OS PRÓXIMOS ELEMENTOS
+*/
+.line {width: 100%; float: left;}
+.clear {clear: both;}
+
+/* *************************
+******* FORM'S STYLES ******
+************************** */
+/* BOX'S CONTROLADORAS DE FORM */
+.box-diagram2 {width: 49.4%; margin-right: 1%; float: left; margin-bottom: 10px; position: relative}
+.box-diagram3 {width: 32.5%; margin-right: 1%; float: left; margin-bottom: 10px; position: relative}
+.box-diagram4 {width: 23.9%; margin-right: 1%; float: left; margin-bottom: 10px; position: relative}
+
+/* ZERA MARGEM A DIREITA */
+.right-none {margin-right: 0% !important;}
+
+.small-titulo {font-size: 12px; margin-bottom: 4px; display: block; text-align: left;} /* TÍTULO DE INPUT */
+
+.form-icon {width: 100%; padding: 12px 12px 12px 45px; color: #444; border: 1px solid rgba(0,0,0,0.1); border-bottom: 3px solid rgba(0,0,0,0.1); background-repeat: no-repeat; background-position: left 10px center; background-size: 20px;} /* OBJETO PRINCIPAL */
+.form {width: 100%; color: #444; border: 1px solid rgba(0,0,0,0.1);} /* OBJETO PRINCIPAL */
+.input-form-larg {font-size: 15px; padding: 14px}
+.input-form-medio {font-size: 14px; padding: 12px;}
+.input-form-low {font-size: 13px; padding: 8px;}
+
+.area-form-larg {font-size: 20px; height: 120px; padding: 14px}
+.area-form-medio {font-size: 15px; height: 100px; padding: 12px}
+.area-form-low {font-size: 12px; height: 80px; padding: 8px}
+
+.campo-up { cursor:pointer; display:block; opacity:0; position:absolute;}
+.campo-up-fake { background:url(../images/img_sl.png) no-repeat center right; float: left;}
+
+.news::-webkit-input-placeholder{
+    color: rgba(255,255,255,.6);
+}
+.news::-ms-input-placeholder{
+    color: rgba(255,255,255,.6);
+}
+.news::-moz-placeholder{
+    color: rgba(255,255,255,.6);
+}
+.news:-moz-placeholder{
+    color: rgba(255,255,255,.6);
+}
+
+.on-smart {display: none}
+.on-desktop {visibility: visible}
+/* *************************
+******* END FORM STYLE *******
+************************** */
+
+a {
+    /*color: #104e8b !important;*/
+    text-decoration: none !important;
+}
+
+
+/* BOTÕES GERAL  */
+
+a.button-primary {
+    background: #033266;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 35px 18px 35px;
+    font-size: 16px;
+    font-weight: 400;    
+    transition: 0.3s;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.1);
+}
+
+.btn-primary {
+    color: #fff;
+}
+
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}
+
+a.button-primary:hover {
+    text-decoration: none;
+    background: #054994;
+    color: #fff;
+}
+
+a.button-yellow {
+    background: #ffb22c;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 18px 35px 18px 35px;
+    font-size: 16px;
+    font-weight: 400;    
+    transition: 0.3s;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.1);
+}
+
+a.button-yellow:hover {
+    text-decoration: none;
+    background: #ca8308;
+    color: #fff;
+}
+
+a.button-default {
+    background: #104e8b;
+    border-radius: 5px;
+    /* border: solid 2px #104e8b; */
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 18px 35px 18px 35px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+
+}
+
+a.button-default:hover {
+    text-decoration: none;
+    background: #033266;
+    /* border: solid 2px #033266; */
+    color: #ffffff;
+}
+
+.btn-primary {
+    background: #104e8b;
+    border: #104e8b;
+}
+
+
+/* *************************
+** PATTERNS / WALLPAPERS ***
+************************** */
+.wall {background-repeat: no-repeat; background-position: center center; background-size: cover}
+.wall-fixed {background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-size: cover}
+.wall-repeat {background-repeat: repeat; background-position: center center;}
+
+.shadow-inset {box-shadow: inset 0 6px 6px -5px rgba(0,0,0,0.4)}
+.shadow-inset2 {box-shadow: inset 0 -6px 6px -5px rgba(0,0,0,0.4)}
+
+/* *************************
+******* BTN'S STYLE ********
+************************** */
+.btn { /* OBJETO PRINCIPAL */
+    cursor: pointer; 
+    border: none;
+    display: inline-block; 
+    -webkit-transition: 0.3s; transition: 0.3s;
+    text-align: center;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.1);
+}
+.btn.shadownone {text-shadow: none;}
+
+.btn.btn-opacity {background-color: rgba(2,2,2,.2)}
+.btn.btn-opacity:hover {background-color: rgba(2,2,2,.3)}
+.btn.btn-opacity2 {background-color: rgba(2,2,2,.1)}
+.btn.btn-opacity2:hover {background-color: rgba(2,2,2,.14)}
+
+.btn:hover {}
+
+.btn-larg {font-size: 21px; padding: 21px 45px 21px 45px;}
+.btn-medio {font-size: 19px; padding: 18px 35px 18px 35px;}
+.btn-low {font-size: 15px; padding: 15px 30px 15px 30px;}
+
+.btn-icon {font-size: 15px; padding: 8px 12px 10px 12px; width: 40px}
+
+/* *************************
+******* BTN'S COLORS *******
+************************** */
+.btn-white {background-color: #fff;} .btn-white:hover {background-color:#f0f0f0; }
+.btn-black {background-color: #444;} .btn-black:hover {background-color:#222; }
+.btn-green {background-color: #31482d;} .btn-green:hover {background-color:#415f3b; }
+.btn-red {background-color: #cd2d31;} .btn-red:hover {background-color:#ed3237; }
+.btn-blue {background-color: #007294;} .btn-blue:hover {background-color:#0092be; }
+.btn-yellow {background-color: #ffb22c;} .btn-yellow:hover {background-color:#d4972c; }
+/* *************************
+******* FORM'S STYLES ******
+************************** */
+
+
+.on-smart {display: none}
+.on-desktop {visibility: visible}
+/* *************************
+******* BODY WEBSITE *******
+************************** */
+
+/* BOX CENTRALIZADORA */
+.box-center {width: 1400px; max-width: 91%; margin: 0 auto; position: relative;}
+.box-center2 {width: 850px; max-width: 91%; margin: 0 auto; position: relative;}
+
+/* HEADER HOME */
+.content-header {
+    width: 100%; 
+    position: relative;
+    height: 100%;
+    height: calc(100vh - 0px);
+}
+
+.content-header .cover-header {margin-right: 350px; height: 100%; height: calc(100vh - 0px);}
+.content-header .header-fix-menu {position: absolute; width: 350px; height: 100%; padding-bottom: 30px; right: 0; top: 0; overflow: hidden; overflow-y: auto; border-left: 2px solid #033266;}
+.content-header .header-fix-menu .logo {width: 130px; height: 150px; background: url(../images/logo-home.png) no-repeat center center; background-size: 100%; margin: 25px auto;}
+.content-header .header-fix-menu h2 {font-size: 27px; margin-bottom: 20px;}
+.content-header .header-fix-menu h2 strong {font-size: 55px; display: block; margin-top: -2px}
+.content-header .header-fix-menu menu {}
+.content-header .header-fix-menu menu li {list-style: none; display: block; font-size: 15px; letter-spacing: 3px;}
+.content-header .header-fix-menu menu li a {width: 100%; float: left;}
+.content-header .header-fix-menu menu li a span {padding: 20px 15px; height: 60px; background-color: #fff; color: #104e8b; margin-left: 0px; display: block; margin-left: 60px; border-bottom: 1px solid rgba(0,0,0,.1)}
+.content-header .header-fix-menu menu li a .active {background-color: #104e8b; color: #fff; padding: 12px 15px}
+.content-header .header-fix-menu menu li a:hover .active {background-color: #1065b9;}
+.content-header .header-fix-menu menu li a i {color: #40c4ff; float: left; font-size: 27px; text-align: center; height: 60px; width: 60px; padding: 15px 5px; border-bottom: 1px solid rgba(0,0,0,.1);}
+.content-header .header-fix-menu menu li a:hover span {background-color: rgba(0,0,0,.01);}
+
+.content-header .header-fix-menu .redes-header {margin-top: 15px;}
+.content-header .header-fix-menu .redes-header a {width: 40px; border-radius: 5px; text-align: center; border: 1px solid rgba(0,0,0,.08); background-color: #fff; color: #104e8b; font-size: 18px; padding: 8px 0; margin-top: 30px; display: inline-block}
+.content-header .header-fix-menu .redes-header a:hover {background-color: #f6f6f6;}
+
+
+.content-cursos-home {}
+.content-cursos-home article {position: relative; min-height: 450px;}
+.content-cursos-home article .cover {position: absolute; width: 100%; height: 100%; z-index: 1; background-color: #033266c2;}
+.content-cursos-home article:hover .cover {position: absolute; width: 100%; height: 100%; z-index: 1; background-color: #0a56abad;}
+.content-cursos-home article header {position: absolute; width: 80%; left: 10%; top: 50%; margin-top: -130px; z-index: 2}
+.content-cursos-home article:hover header {margin-top: -140px;}
+.content-cursos-home article header .icon {width: 200px; margin: 0 auto;}
+.content-cursos-home article header h1 {font-size: 25px; margin-top: -10px}
+
+
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1400px) {
+
+
+}
+
+@media screen and (max-width: 1150px) {
+    .title-ultra {font-size: 68px}
+    .title-larg {font-size: 40px}
+    .title-page {font-size: 32px}
+    .title-page-sec {font-size: 22px}
+    .subtitle-page {font-size: 16px}
+    .text-page {font-size: 14px; line-height: 23px}
+    .header-page h1 {font-size: 50px; margin-bottom: 15px; border-left: 15px solid #f5af3d; padding-left: 10px;}
+    .header-page p {font-size: 17px;}
+    .title-agenda header h1 {font-size:45px; line-height: 40px;}
+
+    .line1 {display: none}
+    .line2 {display: block}
+    .line3 {display: none}
+}
+
+@media screen and (max-width: 900px) {
+    .title-ultra {font-size: 58px}
+    .title-larg {font-size: 35px}
+    .title-page {font-size: 26px}
+    .title-page-sec {font-size: 18px}
+    .subtitle-page {font-size: 15px}
+    .text-page {font-size: 14px; line-height: 23px}
+
+    .padding-total-low, .padding-total-normal, padding-total-high {padding: 15px;}
+    .padding-high, .padding-high2 {padding: 50px 0;}
+    .padding-default {padding: 40px 0;}
+    .padding-normal {padding: 30px 0;}
+
+    .box20, .box25 {width: 50%}
+    .box30, .box33, .box35, .box40, .box45, .box50, .box60, .box65, .box70, .box75 {width: 100%}
+
+    .box-diagram2, .box-diagram3 {width: 100%; margin-right: 0;}
+    .box-diagram3 .btn {font-size: 13px; padding: 10px 4px;}
+
+    .submenu {display: none}
+    .menu-anchor {display: block}
+
+    .table .tb-field {padding: 9px 5px; font-size: 16px;}
+    .table .tb-field2 {padding: 9px 5px; font-size: 13px;}
+    .table .tb-field3 {padding: 15px 5px; font-size: 12px;}
+
+    .tabs_curso ul li {font-size: 10px; border-top: 1px solid #ffb22c;}
+    .tabs_curso ul li a {padding: 20px 10px;}
+
+    .sharebox {text-align: center;}
+}
+
+@media screen and (max-width: 550px) {   
+    .title-ultra {font-size: 48px}
+    .title-larg {font-size: 30px}
+    .title-page {font-size: 23px}
+    .title-page-sec {font-size: 16px}
+    .subtitle-page {font-size: 14px}
+    .text-page {font-size: 14px; line-height: 22px}
+
+    .header-default {margin-bottom: 40px;}
+    .header-default h1 {font-size: 14px; margin-bottom: 5px;}
+    .header-default h1 strong {display: block; font-size: 27px; margin-top: 2px;}
+    .header-default p {font-size: 15px;}
+
+    .box, .box1, .box2 {display: inline-block; vertical-align: top; margin-left: 0; padding:10px 0;}
+    .box20, .box25 {width: 100%}
+
+    .on-smart   {display: block;}
+    .on-desktop {display: none;}
+
+    .btn-larg, .btn-medio, .btn-low {width: 100%;}
+    .btn-larg {padding: 15px 5px; font-size: 15px;}
+    .btn-medio {padding: 15px 5px; font-size: 13px;}
+    .btn-low {padding: 15px 5px; font-size: 11px;}
+
+    .mini-gal {width: 47%}
+
+    .txt-social {display: none}
+    .sharebox2 li a {font-size: 15px; width: 45px; padding: 9px}
+    .sharebox2 .whatsapp2 {display: inline-block;}
+    .sharebox .whatsapp {display: inline-block;}
+
+    .content-header {width: 100%; float: left; height: auto;}
+    .content-header .cover-header {display: none;}
+    .content-header .header-fix-menu {
+        width: 100%; 
+        float: left;
+        opacity: 1;
+        position: relative;
+    }
+
+    .content-header .header-fix-menu menu li {font-size: 12px; letter-spacing: 2px;}
+    .content-header .header-fix-menu menu li a span {padding: 13px 15px; height: 40px; background-color: #fff; color: #104e8b; margin-left: 0px; display: block; margin-left: 40px; border-bottom: 1px solid rgba(0,0,0,.1)}
+    .content-header .header-fix-menu menu li a .active {background-color: #104e8b; color: #fff;}
+    .content-header .header-fix-menu menu li a:hover .active {background-color: #166352;}
+    .content-header .header-fix-menu menu li a i {font-size: 22px; height: 40px; width: 40px; padding: 10px 5px;}
+    .content-header .header-fix-menu menu li a:hover span {background-color: rgba(0,0,0,.01);}
+
+    .content-header .header-fix-menu .logo {width: 130px; height: 150px; margin: 12px auto; background-image: url(../images/logo.png)}
+    .content-header .header-fix-menu h2 {font-size: 20px; margin-bottom: 10px;}
+    .content-header .header-fix-menu h2 strong {font-size: 27px;}
+
+    .gal-quem {padding: 5px; width: 50% !important;}
+    .content-instagram article {width: 18%; min-height: 60px; float: left; margin: 0 1%; overflow: hidden; position: relative}
+
+    .footer-logo {width: 80px; float: none; margin: 0 auto;}
+    .copy {margin-top: 0; font-size: 12px; line-height: 18px; margin-bottom: 10px; text-align: center; float: next}
+
+}
+/*formulario de inscricao mobile*/
+.box-diagram2, .box-diagram3 {width: 100%; margin-right: 0;}
+.box-diagram3 .btn {font-size: 13px; padding: 10px 4px;}
+
+.padding-total-low, .padding-total-normal, padding-total-high {padding: 15px;}
+.padding-high, .padding-high2 {padding: 50px 0;}
+.padding-default {padding: 40px 0;}
+.padding-normal {padding: 30px 0;}
+
+
+

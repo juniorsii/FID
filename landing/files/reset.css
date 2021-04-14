@@ -1,0 +1,173 @@
+/* ZERA MARGENS E PADDING DEFAULT DO NAVEGADOR, RETIRA BORDAS DE INPUTS E FAZ CÁLCULO DE LARGURA EM BOXES */
+* {
+    margin: 0; 
+    padding: 0; 
+    outline: none; 
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.text-shadow {text-shadow: 1px 1px 1px rgba(0,0,0,.2)}
+
+/* SHADOW TITLE */
+.shadow-title {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.02), rgba(0,0,0,0.09), rgba(0,0,0,0.5), rgba(0,0,0,0.7), rgba(0,0,0,0.9));
+}
+.shadow-title2 {
+    background-image: linear-gradient(to top, rgba(2,128,166,0.02), rgba(2,128,166,0.09), rgba(2,128,166,0.5), rgba(2,128,166,0.7), rgba(2,128,166,0.9));
+}
+.shadow-title3 {
+    background-image: linear-gradient(to bottom, rgba(2,128,166,0.02), rgba(2,128,166,0.09), rgba(2,128,166,0.5), rgba(2,128,166,0.7), rgba(2,128,166,0.9));
+}
+
+/* MARGEM DE SEPARAÇÃO PARA ÍCONES DO FONT AWESOME */
+.fa-r1 {margin-right: 4px}
+.fa-r2 {margin-right: 8px}
+.fa-r3 {margin-right: 11px}
+
+/* ALINHAMENTO DE BOXES E TEXTOS */
+.t-center {text-align: center}
+.t-justify {text-align: justify}
+.t-right {text-align: right}
+.t-upper {text-transform: uppercase}
+
+/* TEXTO INVISÍVEL */
+.font-zero {font-size: 0px !important}
+
+/* PRÉ-FORMATAÇÃO DE LINKS */ 
+a {text-decoration: none;}
+
+/* TRATAMENTO E LARGURA FLUÍDA DE IMAGENS */
+.img {width: 100%; height: auto;}
+img {margin-bottom: -5px;}
+
+/* TRANSIÇÃO SUAVIZADA */
+.transition {-webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s;}
+
+/* FLUTUACÃO DE ELEMENTOS */
+.float_l {float: left;}
+.float_r {float: right;}
+
+/* ZERA MARGEM A DIREITA */
+.right-none {margin-right: 0% !important;}
+
+/* BORDAS ARREDONDADAS EM ELEMENTOS */
+.radius-p {-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.radius-m {-webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+.radius-g {-webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px;}
+.round {-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+
+.radius-bottom {
+    -webkit-border-bottom-right-radius: 7px; 
+    -webkit-border-bottom-left-radius: 7px; 
+    -moz-border-radius-bottomright: 7px; 
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px; 
+    border-bottom-left-radius: 7px;
+}
+.radius-top {
+    -webkit-border-top-left-radius: 7px; 
+    -webkit-border-top-right-radius: 7px; 
+    -moz-border-radius-topleft: 7px; 
+    -moz-border-radius-topright: 7px; 
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/* VÍDEOS DO YOUTUBE E VIMEO RESPONSIVOS PARA DIV CONTROLADORA */
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 0px; height: 0; overflow: hidden;}
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+video {width: 100% !important; height: auto !important; object-fit: cover}
+
+/*
+ LINE -> ADICIONA LINHA PARA SEPARAR ELEMENTOS 
+ CLEAR -> LIMPA FLUTUAÇÃO PARA OS PRÓXIMOS ELEMENTOS
+*/
+.line {width: 100%; float: left;}
+.clear {clear: both;}
+
+/* POSIÇÕES DE ELEMENTOS */
+.absolute {position: absolute}
+.relative {position: relative}
+.fixed {position: fixed}
+
+/* PADDINGS PADRÕES */
+.padding-small {padding: 10px 0}
+.padding-low {padding: 20px 0}
+.padding-normal {padding: 30px 0}
+.padding-default {padding: 60px 0}
+.padding-high {padding: 80px 0}
+.padding-high2 {padding: 120px 0}
+
+.padding-total-small {padding:10px}
+.padding-total-low {padding:20px}
+.padding-total-normal {padding:35px}
+.padding-total-high {padding:50px}
+
+/* ****************************
+***** GENERIC WIDTH BOXS ******
+**************************** */
+.box-full {width: 100%; float: left; position: relative}
+.box {display: inline-block; vertical-align: top; margin-left: -4px; padding:10px;} /* OBJETO PRINCIPAL */
+.box1 {display: inline-block; vertical-align: top; margin-left: -4px; padding:5px;} /* OBJETO PRINCIPAL */
+.box2 {display: inline-block; vertical-align: top; margin-left: -4px; padding:25px;} /* OBJETO PRINCIPAL */
+.box3 {display: inline-block; vertical-align: top; margin-left: -4px; padding:35px;} /* OBJETO PRINCIPAL */
+
+.box15 {width: 15%;} /* LARGURA DE 15% */
+.box20 {width: 20%;} /* LARGURA DE 20% */
+.box25 {width: 25%;} /* LARGURA DE 25% */
+.box30 {width: 30%} /* LARGURA DE 30% */
+.box33 {width: 33.3333%} /* LARGURA DE 33.333% */
+.box35 {width: 35%} /* LARGURA DE 35% */
+.box40 {width: 40%} /* LARGURA DE 40% */
+.box45 {width: 45%} /* LARGURA DE 45% */
+.box50 {width: 50%} /* LARGURA DE 50% */
+.box60 {width: 60%} /* LARGURA DE 60% */
+.box65 {width: 65%} /* LARGURA DE 65% */
+.box70 {width: 70%} /* LARGURA DE 70% */
+.box75 {width: 75%} /* LARGURA DE 75% */
+.box100 {width: 100%} /* LARGURA DE 100% */
+
+/* ****************************
+***** TRIGGER ERRORS BOXS *****
+**************************** */
+.trigger { /* OBJETO PRINCIPAL */
+    display: block;
+    margin-bottom: 13px; 
+    border: 1px solid rgba(0,0,0,0.1); 
+    color: rgba(0,0,0,0.6);
+    padding: 15px;
+    font-size: 16px;
+    position: relative;
+}
+
+.trigger-close {position: absolute; top: 7px; right: 7px; font-size: 12px; color: rgba(0,0,0,0.4); cursor: pointer}
+.trigger-close:hover {color: rgba(0,0,0,0.6);}
+
+.accept {background-color: #dff0d8}
+.info {background-color: #d9edf7}
+.alert {background-color: #fcf8e3}
+.error {background-color: #f2dede}
+
+/* ****************************
+******** TABLES STYLES ********
+**************************** */
+.table {}
+.table .tb-field {padding: 9px 14px; font-size: 20px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.table .tb-field2 {padding: 9px 14px; font-size: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+.table .tb-field3 {padding: 24px 15px; font-size: 15px; border-bottom: 1px solid rgba(0,0,0,0.1);}
+
+/* ****************************
+******** MODAL DEFAULT ********
+**************************** */
+.mask-modal, .mask-banner-modal {width: 100%; height: 100%; min-height: 100%; top: 0; position: fixed; background-color: rgba(38,54,36,.8); z-index: 198; display: none}
+.content-modal, .content-banner-modal {position: fixed; z-index: 200; display: none; width: 900px; max-width: 90%; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px;}
+.content-banner-modal {width: 650px !important; display: block; top: 50%; margin-top: -325px;}
+.mask-banner-modal {display: block}
+
+
+.loading-modal {width: 40px; height: 40px; display: none; position: fixed; left: 50%; top: 50%; margin-left: -20px; margin-top: -20px; background: url(../_images/icons/loading.gif) no-repeat center center; background-size: 100%;}
+.close-modal {position: absolute; z-index: 199; right: -10px; top: -10px; cursor: pointer; width: 40px; height: 40px; padding: 4px 0; font-size: 25px;}
+
+

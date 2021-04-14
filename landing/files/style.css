@@ -1,0 +1,138 @@
+/*
+* CSS PADRÃO LANDING PAGE - FID.
+* Criado em : 09/05/2019, 17:38:37
+* Autor     : Junior Silva
+*/
+
+/* *************************
+******* FONT FAMILYS *******
+************************** */
+
+/*
+* FONT PROXIMA
+*/
+@font-face {font-family: mont-ultra; src: url(../fonts/montserrat-black.ttf);}
+@font-face {font-family: mont-extrabold; src: url(../fonts/montserrat-extrabold.ttf);}
+@font-face {font-family: mont-bold; src: url(../fonts/montserrat-bold.ttf);}
+@font-face {font-family: mont-medium; src: url(../fonts/montserrat-medium.ttf);}
+@font-face {font-family: mont-regular; src: url(../fonts/montserra-regular.ttf);}
+@font-face {font-family: mont-light; src: url(../fonts/montserrat-light.ttf);}
+@font-face {font-family: mont-elight; src: url(../fonts/montserrat-extralight.ttf);}
+@font-face {font-family: mont-thin; src: url(../fonts/montserrat-thin.ttf);}
+
+body, html {font-family: mont-light; overflow-x:hidden;}
+
+/* *************************
+******* FONT FAMILYS *******
+************************** */
+
+/* *************************
+******* FONT WEIGHTS *******
+************************** */
+
+.f-thim {font-family: mont-thin;}
+.f-elight {font-family: mont-elight;}
+.f-light {font-family: mont-light;}
+.f-regular {font-family: mont-regular;}
+.f-medio {font-family: mont-medium;}
+.f-semibold {font-family: mont-bold;}
+.f-bold {font-family: mont-extrabold;}
+.f-ebold {font-family: mont-ultra;}
+.f-ubold {font-family: mont-ultra;}
+
+/* *************************
+******* FONT COLORS *******
+************************** */
+.f-black {color: #454545;}
+.f-gray {color: #555;}
+.f-silver {color: #888;}
+.f-white {color: #fff;}
+.f-red {color: #ed2131;}
+.f-red1 {color: #c84e4e;}
+.f-blue {color: #033266;}
+.f-blue2 {color: #40c4ff;}
+.f-green {color: #31482d;}
+.f-yellow {color: #ffb22c;}
+.f-orange {color: #FF8000;}
+
+/* *************************
+******* BOX COLORS *********
+************************** */
+.box-black {background-color: #242424;}
+.box-gray {background-color: #565656;}
+.box-silver {background-color: #f4f4f4;}
+.box-blue {background-color: #033266;}
+.box-green1 {background-color: #1f401c;}
+.box-yellow1 {background-color: #ffb22c;}
+
+/* *************************
+** PATTERNS / WALLPAPERS ***
+************************** */
+.wall {background-repeat: no-repeat; background-position: center center; background-size: cover}
+.wall-fixed {background-repeat: no-repeat; background-attachment: fixed; background-position: center center; background-size: cover}
+.wall-repeat {background-repeat: repeat; background-position: center center;}
+
+.on-smart {display: none}
+.on-desktop {visibility: visible}
+/* *************************
+******* BODY WEBSITE *******
+************************** */
+
+/* BOX CENTRALIZADORA */
+.box-center {width: 1400px; max-width: 91%; margin: 0 auto; position: relative;}
+.box-center2 {width: 850px; max-width: 91%; margin: 0 auto; position: relative;}
+
+/* HEADER LANDING */
+.content-header {
+    width: 100%; 
+    position: relative;
+    height: 100%;
+    height: calc(100vh - 0px);
+}
+
+.content-header .cover-header {margin-right: 350px; height: 100%; height: calc(100vh - 0px);}
+.content-header .header-fix-menu {position: absolute; width: 350px; height: 100%; padding-bottom: 30px; right: 0; top: 0; overflow: hidden; overflow-y: auto; border-left: 2px solid #033266;}
+.content-header .header-fix-menu .logo {width: 180px; height: 180px; background: url(../images/logo-home.png) no-repeat center center; background-size: 100%; margin: 25px auto;}
+.content-header .header-fix-menu h2 {font-size: 27px; margin-bottom: 20px;}
+.content-header .header-fix-menu h2 strong {font-size: 35px; display: block; margin-top: -2px}
+.content-header .header-fix-menu menu {}
+.content-header .header-fix-menu menu li {list-style: none; display: block; font-size: 15px; letter-spacing: 3px;}
+.content-header .header-fix-menu menu li a {width: 100%; float: left;}
+.content-header .header-fix-menu menu li a span {padding: 20px 15px; height: 60px; background-color: #fff; color: #104e8b; margin-left: 0px; display: block; margin-left: 60px; border-bottom: 1px solid rgba(0,0,0,.1)}
+.content-header .header-fix-menu menu li a .active {background-color: #104e8b; color: #fff; padding: 12px 15px}
+.content-header .header-fix-menu menu li a:hover .active {background-color: #1065b9;}
+.content-header .header-fix-menu menu li a i {color: #40c4ff; float: left; font-size: 27px; text-align: center; height: 60px; width: 60px; padding: 15px 5px; border-bottom: 1px solid rgba(0,0,0,.1);}
+.content-header .header-fix-menu menu li a:hover span {background-color: rgba(0,0,0,.01);}
+
+.content-header .header-fix-menu .redes-header {margin-top: 15px;}
+.content-header .header-fix-menu .redes-header a {width: 40px; border-radius: 5px; text-align: center; border: 1px solid rgba(0,0,0,.08); background-color: #fff; color: #104e8b; font-size: 18px; padding: 8px 0; margin-top: 30px; display: inline-block}
+.content-header .header-fix-menu .redes-header a:hover {background-color: #f6f6f6;}
+
+
+
+.header .logo {width: 300px; height: 96px; background: url(images/logo.png) no-repeat center center; background-size: 100%;}
+.header .box-menu {margin-top: 37px;}
+
+/* *************************
+******* STYLE MOBILE *********
+************************** */
+@media screen and (max-width: 550px) {   
+    .on-smart   {display: block;}
+    .on-desktop {display: none;}
+
+    .content-header .cover-header {margin-right:0; width: 100%;}
+    .content-header .header-fix-menu {
+        width: 100%; 
+        //background-color: rgba(255,255,255,.7);
+        background-image: linear-gradient(to right, #033266, rgba(2,128,166,0.5));
+        opacity: 0.9;
+    }
+    .content-header .header-fix-menu .logo {width: 100px; height: 100px; margin: 18px auto;}
+    .content-header .header-fix-menu h2 {font-size: 20px; margin-bottom: 15px; color: #fff;}
+    .content-header .header-fix-menu h2 strong {font-size: 27px;}
+
+    .content-header .header-fix-menu menu li a {font-size: 15px;}
+    .content-header .header-fix-menu menu li a:hover {background-color: #fff;}
+ 
+}
+
